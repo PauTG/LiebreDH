@@ -1,0 +1,47 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #EAC926;
+}
+main{
+    text-align: center;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.titulares{
+    font-size: 24px;
+}
+
+.desc{
+    font-size: 16px;
+}
+
+.descrip{ 
+ font-size: 16px;
+}
+
+
+.search{
+    background-color: #0000;
+    color: #f2f2f2;
+    padding: 5px 10px;
+    margin-right: 16px;
+    font-size: 12px;
+    border:#0000;
+    }
+
+.titulo-footer{
+    font-size: 16px;
+}
+.burger{
+    background-color: #03264C;
+}
+
+.foot{
+    text-align: center;
+}

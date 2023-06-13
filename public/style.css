@@ -43,6 +43,15 @@ main{
     background-color: #03264C;
 }
 
+.emote{
+    font-size: 2em;
+    margin: 15px;
+
+}
 .foot{
     text-align: center;
+}
+
+.copy{
+    margin: 15px;
 }

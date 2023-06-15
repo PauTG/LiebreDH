@@ -1,6 +1,8 @@
-* {
+html {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    background-color: #ECE6D7;
+    text-align: center;
 }
 
 header {
@@ -8,6 +10,14 @@ header {
 }
 main{
     text-align: center;
+    align-items: 90%;
+}
+.card{
+    margin: 10px;
+    background-color: white;
+    border: 1px;
+    padding: 1em 15px;
+
 }
 
 .precio{
@@ -15,17 +25,23 @@ main{
 }
 
 .titulares{
-    font-size: 24px;
+    font-size: 30px;
+    color: gray;
 }
 
 .desc{
     font-size: 16px;
+    color: #008000;
 }
 
 .descrip{ 
  font-size: 16px;
 }
-
+.camioncito{
+    padding: 10px;
+    border: #008000 solid 1px;
+    border-radius: 50%;
+}
 
 .search{
     background-color: #0000;
@@ -36,11 +52,34 @@ main{
     border:#0000;
     }
 
+.banner{
+    margin-top: 15px;
+}
+
 .titulo-footer{
     font-size: 16px;
 }
-.burger{
+.burger button{
     background-color: #03264C;
+}
+
+.burgerList{
+    float: left;
+    margin-top: 10px;
+    width: 750px;
+    display: flex;
+    align-items: center;
+    
+}
+
+li {
+    border-right: 1px solid #9B9A9A;
+    float: left;
+    list-style: none outside none;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: auto;
+    height: auto;
 }
 
 .emote{
@@ -55,4 +94,27 @@ main{
 .copy{
     margin: 15px;
     text-align: center;
+}
+
+
+@media screen and (min-width: 360px) {
+    li{
+        display: none;
+    }
+    .card {
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    .burger{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px){
+   .burger { 
+    display: none;
+}
+ li {
+    display:block;
+    text-align: center;
+ }
 }

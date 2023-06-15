@@ -17,11 +17,20 @@
     <header>
         <section><img class="img" src="../public/logo-mercado-liebre.svg" alt="Imagen banner">
         </section>
-        <h3 class="titulares"> Comprá en cuotas :3 <i class="fas fa-hand-holding-usd"></i></h3>
+        <h3> Comprá en cuotas :3 <i class="fas fa-hand-holding-usd"></i></h3>
 
         <nav>
-            <div>
-                <button class="burger fas fa-bars"></button>
+            <div class="search">
+                <form action="#">
+                    <input type="text" placeholder=" Search Courses" name="search">
+                    <button class="bt-search">
+                        <i class="fa fa-search" style="font-size: 18px;">
+                        </i>
+                    </button>
+                </form>
+            </div>
+            <div class="burger"><button class="fas fa-bars"></button></div>
+            <div class="burgerList">
                 <li><a href="#"> Ofertas</a></li>
                 <li><a href="#"> Tiendas oficiales </a> </li>
                 <li><a href="#"> Vender </a></li>
@@ -33,55 +42,72 @@
         </div>
         </div>
         </div>
-        <div class="search">
-            <form action="#">
-                <input type="text" placeholder=" Search Courses" name="search">
-                <button class="bt-search">
-                    <i class="fa fa-search" style="font-size: 18px;">
-                    </i>
-                </button>
-            </form>
-        </div>
     </header>
+    <img class="banner" src="../public/img-home-banner (1).jpg" width="100%">
     <main>
-        <img class="banner" src="../public/img-home-banner (1).jpg" width="100%">
+        <p class="titulares"><b>Sección: Basado en tu ultima visita</b></p>
         <section>
-            <p class="titulares"><b>Sección: Basado en tu ultima visita</b></p>
+            <div class="card">
+            
             <img src="../public/img-cafetera-moulinex.jpg" width="300px" height="300px">
-            <p class="precio">$6.770</p>
-            <p class="desc">40% OFF</p>
-            <p class="descrip">Cafetera Moulinex</p>
-            <img src="../public/img-macbook-pro-2019.jpg" width="300px" height="300px">
-            <p class="precio">$230.000</p>
-            <p class="desc">20% off</p>
+            <div class="cardText">
+            <p><i class="fas fa-truck camioncito" style="color: #008000"></i></p>
+            <p class="precio">  <i class="fas fa-dollar-sign"></i> 6.770</p>
+            <p class="desc"><b>40% OFF</b></p>
+            <p class="descrip">Cafetera Moulinex</p></div>
+        </div>
+        <div class="card">
+        <img src="../public/img-macbook-pro-2019.jpg" width="300px" height="300px">
+        <p><i class="fas fa-truck camioncito" style="color: #008000"></i></p>
+            <p class="precio"> <i class="fas fa-dollar-sign"></i> 230.000</p>
+            <p class="desc"><b>20% off</b></p>
             <p class="descrip">MacBook Pro 2019</p>
-            <img src="../public/img-samsung-galaxy-s10.jpg" width="300px" height="300px">
-            <p class="precio">$70.500</p>
-            <p class="desc">10% off</p>
+        </div>
+        <div class="card">
+        <img src="../public/img-samsung-galaxy-s10.jpg" width="300px" height="300px">
+        <p><i class="fas fa-truck camioncito" style="color: #008000"></i></p>
+            <p class="precio"> <i class="fas fa-dollar-sign"></i> 70.500</p>
+            <p class="desc"><b>10% off</b></p>
             <p class="descrip">Samsung Galaxy S10</p>
+        </div> 
+        <div class="card">
             <img src="../public/img-tv-samsung-smart.jpg" width="300px" height="300px">
-            <p class="precio">$23.200</p>
-            <p class="desc">5% off</p>
+            <p><i class="fas fa-truck camioncito" style="color: #008000"></i></p>
+            <p class="precio"> <i class="fas fa-dollar-sign"></i> 23.200</p>
+            <p class="desc"><b>5% off</b></p>
             <p class="descrip">SmartTv Samsung 43"</p>
+        </div>
         </section>
+        <p class="titulares"><b>Sección de Ofertas</b></p>
         <section>
-            <p><b>Sección de Ofertas</b></p>
+            <div class="card">
             <img src="../public/img-cafetera-moulinex.jpg" width="300px" height="300px">
-            <p class="precio">$6.770 </p>
-            <p class="desc">40% off</p>
+            <p><i class="fas fa-truck camioncito" style="color: #008000"></i></p>
+            <p class="precio"> <i class="fas fa-dollar-sign"></i> 6.770 </p>
+            <p class="desc"><b>40% off</b></p>
             <p class="descrip">Cafetera Moulinex</p>
+        </div>
+        <div class="card">
             <img src="../public/img-macbook-pro-2019.jpg" width="300px" height="300px">
-            <p class="precio"> $230.000 </p>
-            <p class="desc">20% off</p>
+            <p><i class="fas fa-truck camioncito" style="color: #008000"></i></p>
+            <p class="precio"><i class="fas fa-dollar-sign"></i> 230.000 </p>
+            <p class="desc"><b>20% off</b></p>
             <p class="descrip">MacBook Pro 2019</p>
+        </div>
+        <div class="card">
             <img src="../public/img-samsung-galaxy-s10.jpg" width="300px" height="300px">
-            <p class="precio">$70.500 </p>
-            <p class="desc">10% off</p>
+            <p><i class="fas fa-truck camioncito" style="color: #008000"></i></p>
+            <p class="precio"> <i class="fas fa-dollar-sign"></i> 70.500 </p>
+            <p class="desc"><b>10% off</b></p>
             <p class="descrip">Samsung Galaxy S10</p>
+        </div>
+        <div class="card">
             <img src="../public/img-tv-samsung-smart.jpg" width="300px" height="300px">
-            <p class="precio">$23.200</p>
-            <p class="desc">5% off</p>
+            <p><i class="fas fa-truck camioncito" style="color: #008000"></i></p>
+            <p class="precio"> <i class="fas fa-dollar-sign"></i> $23.200</p>
+            <p class="desc"><b>5% off</b></p>
             <p class="descrip">SmartTv Samsung 43"</p>
+        </div>
         </section>
     </main>
 

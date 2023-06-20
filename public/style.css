@@ -1,24 +1,44 @@
 html {
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
     background-color: #ECE6D7;
     text-align: center;
+    padding: 0px;
 }
 
 header {
     background-color: #EAC926;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
 }
 main{
     text-align: center;
     align-items: 90%;
     margin: 50px;
 }
+.img {
+    width: 100%;
+}
+
+.search {
+    width: 100%;
+    text-align: end;
+}
+.divBanner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.textBanner {
+    color: black;
+}
 .card{
     margin: 10px;
     background-color: white;
     border: 10px;
     padding: 1em 15px;
+    align-items: center;
 }
 
 .imagenes{
@@ -37,6 +57,14 @@ main{
 .desc{
     font-size: 16px;
     color: #008000;
+
+}
+
+.predesc{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
 }
 
 .descrip{ 
@@ -58,7 +86,8 @@ main{
     }
 
 .banner{
-    margin-top: 15px;
+    margin-top: 0px;
+    height: 100%;
 }
 
 .titulo-footer{
@@ -71,9 +100,10 @@ main{
 .burgerList{
     margin-top: 10px;
     flex-direction: row;
+}
 
-   
-    
+.burgerList2{
+    justify-content: end;
 }
 
 li {
@@ -111,9 +141,22 @@ li {
     .burger{
         display: none;
     }
+
+    .divBanner{
+        display: flex;
+        text-align: center;
+    }
+    .bannerB{
+        display:flex;
+    }
 }
 
 @media screen and (min-width: 769px){
+*{
+    padding: 0px;
+    margin: 0px;
+    border-top: 15px 0px;
+}
    .burger { 
     display: none;
 }
@@ -123,5 +166,29 @@ li {
  }
  .card {
     box-shadow: 0px 0px 10px rgb(100,100,100);
+    flex-direction: row;
+    padding: 2px 16px;
+}
+.divBanner{
+    display: flex;
+    text-align: center;
+}
+.bannerB{
+    display: flex;
+}
+.banner{
+    height: auto;
+}
+
+.burgerList2{
+    display: flex;
+}
+.burgerList{
+    margin-top: 10px;
+    flex-direction: row;
+}
+
+.cards{
+    flex-direction: row;
 }
 }

@@ -38,12 +38,19 @@ main{
     background-color: white;
     border: 10px;
     padding: 1em 15px;
-    align-items: center;
+}
+
+.cards{
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.cardText{
+    padding-bottom: 50px;
 }
 
 .imagenes{
-    width: 200px;
-    height:200px;
+    width: 100%;
+    height:100%;
 }
 .precio{
     font-size: 18px;
@@ -64,7 +71,7 @@ main{
     display: flex;
     justify-content: center;
     gap: 10px;
-
+    padding-bottom: 25px;
 }
 
 .descrip{ 
@@ -73,8 +80,10 @@ main{
 .camioncito{
     padding: 10px;
     border: #008000 solid 1px;
-    border-radius: 50%;
-}
+    border-radius: 50px;
+    bottom: -50px;
+} 
+
 
 .search{
     background-color: #0000;
@@ -138,17 +147,16 @@ li {
     .card {
         box-shadow: 0px 0px 10px rgb(100,100,100);
     }
-    .cards{
-        display: flex;
+    .camioncito{
+        bottom: -50px;
     }
-    .burger{
-        display: none;
-    }
+  
 
     .divBanner{
         height: 100%;
         text-align: center;
     }
+   
 }
 
 @media screen and (min-width: 769px){
@@ -166,10 +174,12 @@ li {
  }
  .cards {
     box-shadow: 0px 0px 10px rgb(100,100,100);
-    margin: 15px;
-    display: flex;
-    justify-content: space-around;
+    margin: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
+}
+.camioncito{
+    align-items: end;
 }
 .divBanner{
     display: flex;
@@ -187,10 +197,6 @@ li {
 }
 .burgerList{
     margin-top: 10px;
-}
-
-.cards{
-    flex-direction: row;
 }
 }
 

@@ -15,7 +15,7 @@
 <body class="bodyLogin">
   <header>
     <div class="divBanner">
-      <section><img class="img" src="../public/logo-mercado-liebre.svg" alt="Imagen banner">
+      <section><a href="../views/home.html"><img class="img" src="../public/logo-mercado-liebre.svg"alt="Imagen banner"></a>
       </section>
       <div class="search">
         <form action="#">
@@ -28,96 +28,107 @@
       </div>
     </div>
     <h3 class="textBanner"> Comprá en cuotas<i class="fas fa-hand-holding-usd"></i></h3>
-    <nav class="navR">
-      <div class="burgerList">
-        <li><a href="#"> Ofertas</a></li>
-        <li><a href="#"> Tiendas oficiales </a> </li>
-        <li><a href="#"> Vender </a></li>
-        <li><a href="#"> Ayuda </a> </li>
-      </div>
+    <nav>
+      <div class="listT">
+        <div class="burgerList">
+          <li><a href="#"> Ofertas</a></li>
+          <li><a href="#"> Tiendas oficiales </a> </li>
+          <li><a href="#"> Vender </a></li>
+          <li><a href="#"> Ayuda </a> </li>
+        </div>
 
 
-      <div class="burgerList2">
-        <li><a href="../views/register.html"> Crea tu cuenta </a><i class="far fa-id-card"></i></li>
-        <li><a href="../views/login.html"> Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
-        <li><a href="#"> Mis compras </a><i class="fas fa-shopping-basket"></i></li>
+        <div class="burgerList2">
+          <li><a href="../views/register.html"> Crea tu cuenta </a><i class="far fa-id-card"></i></li>
+          <li><a href="../views/login.html"> Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
+          <li><a href="#"> Mis compras </a><i class="fas fa-shopping-basket"></i></li>
+        </div>
       </div>
     </nav>
   </header>
-  <div>
-  <form class="formR" action="/my-handling-form-page" method="post">
-    <ul>
-      <li>
-        <label for="name">Nombre y apellido:</label>
-        <input type="text" id="name" name="user_name">
-      </li>
-      <li>
-        <label for="user">Nombre de usuario:</label>
-        <input type="text" id="user" name="user">
-      </li>
-      <li>
-        <label for="name">Fecha de nacimiento: </label>
-        <input type="date" id="name" name="user_name">
-      </li>
-      <li>
-        <label for="domicilio">Domicilio:</label>
-        <input type="text" id="domicilio" name="user_domicilio">
-      </li>
-      <li>
-        <p> Perfil del usuario: </p>
-        <legend class="perfilUsuario" for="domicilio">
-          <label><input type="radio"></input>Vendedor</label>
-          <label><input type="radio"></input>Comprador</label>
-        </legend>
-      </li>
-      <li>
-        <label for="mail">Correo electrónico:</label>
-        <input type="email" id="mail" name="user_mail">
-      </li>
-      <li>
-        <p> Categoria de interés: </p>
-        <legend class="categoria" for="categoria">
-          <label><input type="radio"></input>Electro</label>
-          <label><input type="radio"></input>Moda</label>
-          <label><input type="radio"></input>Hogar</label>
-          <label><input type="radio"></input>Jugueteria</label>
-          <label><input type="radio"></input>Vida sana</label>
-        </legend>
-      </li>
+  <div class="formulario">
+    <form class="formR" action="/my-handling-form-page" method="post">
       <ul>
         <li>
-          <label for="foto">Foto de usuario:</label>
-          <input type="image" id="foto" name="user_foto">
+          <label for="name">Nombre y apellido:</label>
+          <input type="text" id="name" name="user_name">
         </li>
         <li>
-          <label for="contra">Contraseña:</label>
-          <input type="password" id="password" name="user_password">
+          <label for="user">Nombre de usuario:</label>
+          <input type="text" id="user" name="user">
         </li>
         <li>
-          <label for="contra">Confirmar contraseña:</label>
-          <input type="password" id="password" name="user_password">
+          <label for="name">Fecha de nacimiento: </label>
+          <input type="date" id="name" name="user_name">
         </li>
-        <div class="btnr">
-          <button> A la sala principal </button>
-          <button> Borrar todo </button>
-        </div>
-      </ul>
-  </form>
-</div>
+        <li>
+          <label for="domicilio">Domicilio:</label>
+          <input type="text" id="domicilio" name="user_domicilio">
+        </li>
+        <li>
+          <p> Perfil del usuario: </p>
+          <legend class="perfilUsuario" for="domicilio">
+            <label><input type="radio"></input>Vendedor</label>
+            <label><input type="radio"></input>Comprador</label>
+          </legend>
+        </li>
+        <li>
+          <label for="mail">Correo electrónico:</label>
+          <input type="email" id="mail" name="user_mail">
+        </li>
+        <li>
+          <p> Categoria de interés: </p>
+          <legend class="categoria" for="categoria">
+            <label><input type="radio"></input>Electro</label>
+            <label><input type="radio"></input>Moda</label>
+            <label><input type="radio"></input>Hogar</label>
+            <label><input type="radio"></input>Jugueteria</label>
+            <label><input type="radio"></input>Vida sana</label>
+          </legend>
+        </li>
+        <ul>
+          <li>
+            <label for="foto">Foto de usuario:</label>
+            <input type="image" id="foto" name="user_foto">
+          </li>
+          <li>
+            <label for="contra">Contraseña:</label>
+            <input type="password" id="password" name="user_password">
+          </li>
+          <li>
+            <label for="contra">Confirmar contraseña:</label>
+            <input type="password" id="password" name="user_password">
+          </li>
+          <div class="btnr">
+            <button> A la sala principal </button>
+            <button> Borrar todo </button>
+          </div>
+        </ul>
+    </form>
+  </div>
   <footer>
     <section class="foot">
-      <p> <i class="fas fa-credit-card emote"></i> </p>
-      <p class="titulo-footer"><b> Pagá con tarjeta o en efectivo</b></p>
-      <p> Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-        puntos de pago. ¡Y siempre es seguro!</p>
-      <p> <i class="fas fa-gift emote"></i> </p>
-      <p class="titulo-footer"> <b>Envío gratis desde $ 2.500</b></p>
-      <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-        productos. Es un beneficio de Mercado Puntos.</p>
-      <p><i class="fas fa-user-shield emote"></i></p>
-      <p class="titulo-footer"><b> Seguridad, de principio a fin</b></p>
-      <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-        porque estás siempre protegid@.</p>
+      <div class="footerH">
+        <div>
+          <p> <i class="fas fa-credit-card emote"></i> </p>
+          <p class="titulo-footer"><b> Pagá con tarjeta o en efectivo</b></p>
+          <p> Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+            puntos de pago. ¡Y siempre es seguro!</p>
+        </div>
+        <div>
+          <p> <i class="fas fa-gift emote"></i> </p>
+          <p class="titulo-footer"> <b>Envío gratis desde $ 2.500</b></p>
+          <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+            productos. Es un beneficio de Mercado Puntos.</p>
+        </div>
+        <div>
+          <p><i class="fas fa-user-shield emote"></i></p>
+          <p class="titulo-footer"><b> Seguridad, de principio a fin</b></p>
+          <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+            porque estás siempre protegid@.</p>
+        </div>
+
+      </div>
       <p class="copy"><b> Copyright © 1999-2020 MercadoLiebre S.R.L. </b></p>
     </section>
   </footer>

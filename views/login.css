@@ -1,20 +1,27 @@
 
-.bodyLogin {
-    background-color: white;
+body {
+    background-color:rgba(191, 185, 181, 0.558);
 }
 
 .inputLogin, ul, li{
-    text-align: center;
-    margin: 15px;
-    padding: 5px;
-    
+    text-align: center; 
 
+}
+
+
+.search {
+    width: 100%;
+    text-align: end;
+}
+.divBanner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .formu{
     background-color:rgba(191, 185, 181, 0.558);
     border-radius: 20px;
-
 }
 
 
@@ -22,9 +29,41 @@
     background-color:rgb(20, 50, 222);
     color:white;
 }
+.btn:hover{
+    background-color:rgb(79, 98, 205);
+}
 
 .botoncito{
     display: flex;
     justify-content: center ;
     margin-top: 10px;
 }
+
+.footerH{
+    display: flex;
+}
+
+.listT {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .burgerList {
+    list-style: none;
+    gap: 10px;
+    justify-content: start;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+  }
+  
+  .burgerList2 {
+    justify-content: end;
+    list-style: none;
+    gap: 10px;
+    display: flex;
+    width: 100%;
+  }

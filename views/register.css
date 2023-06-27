@@ -1,5 +1,10 @@
 html {
-  background-color: rgba(248, 230, 31, 0.93);
+  background-color: #EAC926;
+  font-family: 'Roboto', sans-serif;
+}
+header{
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -8,14 +13,21 @@ html {
 }
 
 .formR {
-  width: 400px;
-
+  width: 100%;
+  align-items: center;
+display: flex;
+justify-content: center;
   padding: 1em;
   border: 1px solid #f3f2f2;
   border-radius: 1em;
   background-color: rgba(230, 228, 206, 0.3);
-  margin: auto;
 
+}
+
+.formulario{
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 ul {
@@ -47,12 +59,14 @@ label {
   text-align: left;
 }
 
-input {
-  font: 1em sans-serif;
-  border: 1px solid #999;
-  width: auto;
-  box-sizing: border-box;
-
+.search {
+  width: 100%;
+  text-align: end;
+}
+.divBanner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 textarea {
@@ -126,32 +140,35 @@ p {
   background-color: white;
 }
 
+.listT {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
 .burgerList {
   list-style: none;
-  display: flex;
   gap: 10px;
   justify-content: start;
   padding: 0;
   margin: 0;
-
+  display: flex;
+  width: 100%;
 }
 
 .burgerList2 {
   justify-content: end;
   list-style: none;
-  display: flex;
   gap: 10px;
+  display: flex;
+  width: 100%;
 }
 
-.navR {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 
 header {
-  background-color: rgba(248, 230, 31, 0.93);
+  background-color:#EAC926;
   padding: 0;
   margin: 0;
 }
@@ -166,4 +183,17 @@ footer {
   margin-top: 15px;
   text-align: center;
   font-size: 19px;
+}
+
+.emote {
+  font-size: 2em;
+  margin: 15px;
+}
+
+.emote:hover {
+  filter: drop-shadow(3px 7px 5px #1b1616);
+}
+
+.footerH {
+  display: flex;
 }

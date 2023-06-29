@@ -6,3 +6,6 @@ comando **modo desarrollador** -> *npm run dev*
 comando **modo revisión** -> *npm start*
 
 
+Desarrollado por: *Paula G*
+
+

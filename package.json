@@ -1,0 +1,27 @@
+{
+  "name": "proyintdh",
+  "version": "1.0.0",
+  "description": "Página Web similar a *Mercado Libre* desarrollada en conjunto con Digital House <3",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PauTG/LiebreDH.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PauTG/LiebreDH/issues"
+  },
+  "homepage": "https://github.com/PauTG/LiebreDH#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
